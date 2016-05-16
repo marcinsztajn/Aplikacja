@@ -1,4 +1,81 @@
 <resources>
     <string name="app_name">Aplikacja testowa</string>
     <string name="title_activity_start_game">StartGame</string>
+    <string name="rules" >
+
+        Gra przeznaczona jest dla graczy od 2 do 4.\n
+\n
+Czym gramy ?\n
+\n
+W Sabaccu występuje 76 kart. Można je podzielić na trzy grupy: \n
+\n
+Kolory [podobnie jak w zwykłych kartach pik, karo itd..., tylko tu oznaczają je przedmioty), i są to: \n
+\n
+·	Staves (klepki) \n
+·	Sabers (szable) \n
+·	Flasks (manierki) \n
+·	Coins (monety)\n
+\n
+Są to karty numerowane od 1... do 11 np: 1 staves, 2 staves itd. -taką jaką mają wartość, za tyle punktów są liczone, np: 5 sabers = 5 punktów.\n
+\n
+Karty "Rankingowane" to: \n
+\n
+·\t Commander (dowódca) [ liczony za 12 ]\n
+·\t	Mistress (pani)	[ liczona za 13 ] \n
+·\t	Master (mistrz)	[ liczony za 14 ] \n
+·\t	Ace (as)	[ liczony za 15 ] \n
+\n
+Występują one w czterech kolorach i nazywamy je np: \n
+\n
+Mistress of Sabers (pani szabel), \n
+Commander of Staves (dowódca klepek)... \n
+\n
+Bez względu na kolor, karty „rankingowane” mają z góry ustalone wartości. \n
+\n
+Karty "Postaci"; jest ich 16 w tym po dwie karty z: \n
+\n
+·	Idiot (idiota)-przyjmuje zawsze wartość 0\n
+·	Rancor (rankor) \n
+·	Jedi Knight (rycerz Jedi) \n
+·	Jedi Master (mistrz Jedi) \n
+· 	Dark Jedi (mroczny Jedi) \n
+·	Lord of the Sith (lord Sith) \n
+·	Smuggler (przemytnik, bądź szmugler) \n
+·	Bounty Hunter (łowca głów, bądź łowca nagród) \n
+\n
+Jest kilka wariantów gry, dlatego karty „postaci” przyjmują różne wartości. Jednak za standard przyjęto zasady Starej Republiki [Old Republic Rules] i w tych to zasadach karty „postaci" mają następujące wartości:\n
+·   Rancor= 9\n·   Jedi Knight= 3\n·   Jedi Master= 3\n·   Dark Jedi= -14\n·   Lord of the Sith= 10\n·   Smuggler= 10\n·   Bounty Hunter= 9\n
+Standardowe zasady gry w Sabacc’a:\n
+Gracze otrzymują po trzy karty, następnie któryś z graczy może poprosić o jeszcze jedną lub dwie. Dobieranie kart zaczyna się od osoby siedzącej po lewej stronie rozdającego. Gracze po kolei deklarują czy chcą dobrać kartę, jeśli nie to przechodzi na kolejną osobę. Po pierwszej kolejce rozdający pyta czy ktoś chce jeszcze kartę i jeśli jest to więcej niż jedna osoba, rozdajemy w kolejności analogicznej jak poprzednio (tzn. od lewej).\n
+\n
+Po rozdaniu wszystkich kart [maksymalnie można mieć 5 kart], gracze decydują się, czy chcą coś wymienić; jeśli nie to gracze kładą odsłonięte wszystkie karty na stół i sumują swoją liczbę punktów. Wymienić można do dwóch karty włącznie. Jeśli posiadamy Jedi Master, możemy wymienić do czterech kart włącznie, ale musimy wcześniej pokazać kartę Jedi Master, pozostałym zawodnikom. [wg. zasad Starej Republiki].\n
+\n
+Można wygrać na kilka sposobów:\n
+1. Mająć Sabacca (można go uzyskać na trzy sposoby): \n
+·	Zdobywając 23 punkty czyli tzw. "Czysty Sabacc"\n·	Zdobywając minus -23 punkty tzw. „Sabacc” [„Fool Sabacc”] \n·	Zdobywając 46 punktów "Podwójny Sabacc" [„Double Sabacc”] (46-23=sabacc) \n·	Mając kombinację Idioty tzn. dowolną dwójkę, trójkę i kartę Idiot\n·	Specjalne zasady Staro Republikańskie: kombinacja Jedi -jeśli masz Jedi Master, Jedi Knight i dowolną kartę z Sabers\n
+
+Wygrywa (w kolejności)\n
+\n- czysty Sabacc [23 P] \n- kombinacja Idioty\n- kombinacja Jedi\n- podwójny Sabacc [46 P] \n- Sabacc [-23 P] \n
+\n
+Jeżeli kilku graczy uzyska tę samą ilość punktów i wygrana nie jest jasna, otrzymują oni po dodatkowej karcie. Ten kto teraz ma najlepszy układ kart –ten wygrywa. Kombinacja Idioty może pokonać ”czystego Sabacca”, jeżeli dwóch graczy ma takie same karty. \n
+Ważna zasada!!\n
+–gdy masz w ręku dowolną piątkę to może ona przyjmować dowolne wartości plusowe bądź minusowe (od 1 do 11, od –1 do -11).\n
+Np. mamy Dowódcę Szabli (12 pkt), dwójkę klepek (2 pkt) i piątkę manierek (przyjmuje wartość 9 pkt). 12+2+9= 23 czyli ”czysty Sabacc”.\n
+2. Mając największą ilość punktów:\n
+·	Najbliższą 23 punktom. Jednak mając wyższą wartość niż 23 punkty należy przeliczać je nieco inaczej.\n
+Np: zdobyliśmy 29 punkty. Odejmujemy od nich wartość „czystego sabacc’a” ,czyli 23 (29 - 23 = 6) w tym rozdaniu zdobyliśmy 6 punktów, co nie jest największą lokatą.\n
+·	Najbliższą -23 punktom.\n
+Przykład na podliczanie punktów:\n
+Gracz Solo ma 43 punkty\nGracz Calrissian ma minus -15 punktów\nGracz Chewie ma 21 punktów\nNikt w tym rozdaniu nie uzyskał , ani „czystego sabacca”, ani „sabacca”- kto więc zwycięża? \nGracz Solo ma 43-23 =20 punktów\nGracz Calrissian za swoim wynikiem znajduje się na ostatnim miejscu\nGracz Chewie pokonał Gracza Solo jednym punktem i to on zgarnia pulę.\n
+Przegrywamy grę, gdy:\n
+·	Mamy powyżej 46 punktów\n·	Mamy niżej -23 punktów (np. mając -26 punktów)\n
+    </string>
+    <string name="tworcy">
+        Twórcami aplikacji są:
+        \n
+        - Marcin Puchlik\n
+        - Arkadiusz Czuba\n
+    </string>
+
+
 </resources>

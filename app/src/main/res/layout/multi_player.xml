@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/duel"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:id="@+id/relative_with_my_main_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/my_main_card_imageview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:background="@color/blue_transparent_80" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:id="@+id/relative_with_rival_main_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/rival_main_card_imageview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/blue_transparent_80" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/my_name_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="TY"
+                        android:textColor="#ff0101"
+                        android:textSize="30dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="#76ff03"
+                        android:layout_below="@+id/my_name_textview"
+                        android:id="@+id/tv_to_insert_my_bt_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/simple_text_my_number_of_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_to_insert_my_bt_name"
+                        android:layout_marginTop="10dp"
+                        android:text="zdobyte punkty:"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/place_to_insert_my_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/simple_text_my_number_of_points"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#ff0101"
+                        android:textSize="22dp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5 ">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/rival_name_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="RYWAL"
+                        android:textColor="#ff0101"
+                        android:textSize="30dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="#76ff03"
+                        android:layout_below="@+id/rival_name_textview"
+                        android:id="@+id/tv_to_insert_rival_bt_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/simple_text_rival_number_of_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_to_insert_rival_bt_name"
+                        android:layout_marginTop="10dp"
+                        android:text="zdobyte punkty:"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/place_to_insert_rival_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/simple_text_rival_number_of_points"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#ff0101"
+                        android:textSize="22dp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:id="@+id/relative_with_my_thumbnails"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:id="@+id/first_thumbnail_imageview"
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/blue_transparent_80" />
+
+                <ImageView
+                    android:id="@+id/second_thumbnail_imageview"
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/first_thumbnail_imageview"
+                    android:background="@color/blue_transparent_80" />
+
+                <ImageView
+                    android:id="@+id/third_thumbnail_imageview"
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/second_thumbnail_imageview"
+                    android:background="@color/blue_transparent_80" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_with_my_thumbnails"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/simple_text_number_of_left_games"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="pozostało gier: "
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/simple_text_number_of_left_games"
+                    android:text="dupa"
+                    android:id="@+id/tv_number_of_left_games"
+                    android:textColor="#ff0101"
+                    android:textSize="20dp" />
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/accept_queque_button"
+                    android:layout_below="@+id/simple_text_number_of_left_games"
+                    android:layout_centerHorizontal="true"
+                    android:text="zatwierdź kolejkę"
+                    android:layout_marginTop="10dp"
+
+
+
+
+
+                    android:textColor="#EB0000"
+                    android:background="@drawable/buttonshape"
+                    android:shadowColor="#A4A865"
+                    android:shadowDx="0"
+
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+
+                    />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

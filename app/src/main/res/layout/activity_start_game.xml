@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:background="@drawable/hansolo">
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Aktywność naszej gry"
-        android:id="@+id/textView2"
-        android:layout_gravity="center_horizontal"
-        android:textSize="50dp"
-        />
+    <Button
+        android:text="Multiplayer"
+        android:textSize="40dp"
+        android:layout_width="250dp"
+        android:id="@+id/multi_player_button"
+        android:textColor="#EB0000"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A4A865"
+        android:shadowDx="0"
+        android:layout_height="60dp"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_below="@+id/single_player_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
 
-</LinearLayout>
+    <Button
+        android:layout_width="250dp"
+
+        android:text="Singleplayer"
+        android:id="@+id/single_player_button"
+
+        android:textSize="40dp"
+
+
+        android:textColor="#EB0000"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A4A865"
+        android:shadowDx="0"
+        android:layout_height="60dp"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

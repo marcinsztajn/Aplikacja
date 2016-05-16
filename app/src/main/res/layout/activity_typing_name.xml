@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/duel"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/text_my_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Twój nick:"
+            android:textColor="@color/green_to_higlight"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/text_rival_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/insert_your_nick_edittext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Nick rywala:"
+            android:textColor="@color/green_to_higlight"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/insert_your_nick_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_rival_name"
+            android:layout_alignRight="@+id/text_rival_name"
+            android:layout_below="@+id/text_my_nickname"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/insert_rival_nick_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_rival_name"
+            android:layout_alignRight="@+id/text_rival_name"
+            android:layout_below="@+id/text_rival_name"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/start_game_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="rozpocznij"
+        android:textSize="25dp"
+
+
+
+
+
+
+        android:textColor="#EB0000"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A4A865"
+        android:shadowDx="0"
+
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_below="@+id/single_player_button"
+        android:layout_marginTop="86dp"
+        />
+
+
+</RelativeLayout>

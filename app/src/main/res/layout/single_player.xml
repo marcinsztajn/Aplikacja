@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_weight="1.2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="fill_parent">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/relative_with_main_user_card"
+                    android:layout_height="fill_parent">
+                    <ImageView
+                        android:id="@+id/place_to_instert_user_card"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:background="@color/blue_transparent_80"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="fill_parent">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/relative_with_main_computer_card"
+                    android:layout_height="fill_parent">
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/place_to_insert_computer_card"
+                        android:background="@color/blue_transparent_80"
+                        android:layout_margin="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/choose_random_cards_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="LOSUJ KARTY" />
+
+                <Button
+                    android:id="@+id/play_button_in_single_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/choose_random_cards_button"
+                    android:layout_alignRight="@+id/choose_random_cards_button"
+                    android:layout_below="@+id/choose_random_cards_button"
+                    android:layout_centerHorizontal="true"
+                    android:text="GRAJ" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/play_button_in_single_player"
+                    android:layout_alignRight="@+id/play_button_in_single_player"
+                    android:id="@+id/resoult_button"
+                    android:layout_below="@+id/play_button_in_single_player"
+                    android:layout_centerHorizontal="true"
+                    android:text="WYNIK" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/relative_with_user_points_to_set"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/name_player_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="GRACZ"
+                        android:textColor="#ff0101"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/player_about_points_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/name_player_textview"
+                        android:layout_marginTop="10dp"
+                        android:text="zdobyte punkty:"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/name_player_textview"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/place_to_insert_user_points_textview"
+                        android:layout_toRightOf="@+id/player_about_points_textview"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@+id/relative_with_user_points_to_set"
+                    android:layout_marginTop="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/blue_transparent_80"
+                        android:id="@+id/first_thumbnail_imageview"
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/second_thumbnail_imageview"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/blue_transparent_80"
+                        android:layout_toRightOf="@+id/first_thumbnail_imageview"
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/third_thumbnail_imageview"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/blue_transparent_80"
+                        android:layout_toRightOf="@+id/second_thumbnail_imageview"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pozostało"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="20dp"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/relative_with_computer_points_to_set"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/name_computer_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="KOMPUTER"
+                        android:textColor="#ff0101"
+                        android:textSize="30dp" />
+                    <TextView
+                        android:id="@+id/computer_about_points_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/name_computer_textview"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="zdobyte punkty:"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/name_computer_textview"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/place_to_insert_computer_points_textview"
+                        android:layout_toRightOf="@+id/computer_about_points_textview"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@+id/relative_with_computer_points_to_set"
+                    android:layout_marginTop="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/blue_transparent_80"
+                        android:id="@+id/first_komputer_thumbnail_imageview"
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/second_komputer_thumbnail_imageview"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/blue_transparent_80"
+                        android:layout_toRightOf="@+id/first_komputer_thumbnail_imageview"
+                        />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/third_komputer_thumbnail_imageview"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/blue_transparent_80"
+                        android:layout_toRightOf="@+id/second_komputer_thumbnail_imageview"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="gier:"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/simple_textview_games"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="#ff0101"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/number_of_lefts_games"
+                        android:layout_toRightOf="@+id/simple_textview_games"
+                        />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
